@@ -1,4 +1,4 @@
-# # WeatherPy
+# #  WeatherPy
 These project has 3 parts:
 
 	 - Retrieve Weather Data 
