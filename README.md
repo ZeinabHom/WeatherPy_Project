@@ -1,4 +1,4 @@
-# #  WeatherPy
+# WeatherPy
 These project has 3 parts:
 
 	 - Retrieve Weather Data 
@@ -9,16 +9,16 @@ These project has 3 parts:
 ### Retrieve Weather Data
 In this part, we find 2,000 random latitudes and longitudes with the below code;
 
-		 lats = np.random.uniform(low=-90.000, high=90.000, size=2000) 
-		 lngs =  np.random.uniform(low=-180.000, high=180.000, size=2000)
+	 lats = np.random.uniform(low=-90.000, high=90.000, size=2000) 
+	 lngs =  np.random.uniform(low=-180.000, high=180.000, size=2000)
 
 Then we use citipy module and nearest_city function to find nearest city of each Lat & Lng;
 
-	      city = citipy.nearest_city(coordinate[0], coordinate[1]).city_name
+         city = citipy.nearest_city(coordinate[0], coordinate[1]).city_name
 
 After that API was used  to retrieve the  weather description for each city and then  one  DataFrame and one CSV file are created from weather data of cities. They include the below information:
 
-	   city, Country, Lat, Lng, Max Temp, Humidity, Cloudiness, Wind Speed & Current Description.
+	 city, Country, Lat, Lng, Max Temp, Humidity, Cloudiness, Wind Speed & Current Description.
 
 ### Customer Travel Destinations Map 
 The final CSV file of previous part is input data 
